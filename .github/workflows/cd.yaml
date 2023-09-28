@@ -10,7 +10,7 @@ jobs:
   build:
     if: github.event.pull_request.merged == true
     name: Deploy AWS CDK TypeScript Stack
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Initiated By User
         run: echo $GITHUB_ACTOR
